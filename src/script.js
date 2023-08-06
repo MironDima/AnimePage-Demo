@@ -2,8 +2,13 @@ import setBg from "./modules/setBg";
 import modal from './modules/modal';
 import prelouder from './modules/prelouder';
 import search from './modules/search';
-
-setBg()
+import scrollTop from './modules/scrolltop';
+import swiper from './modules/swiper';
+import getData from './modules/getData';
 prelouder()
+setBg()
 modal()
 search()
+scrollTop()
+swiper()
+getData('db.json').then((data) => console.log(data.anime))
