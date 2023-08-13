@@ -13,7 +13,6 @@ const modal = () => {
 			},
 			draw(progress) {
 			searchBlock.style.display = 'block'
-			console.log(progress);
 			searchBlock.style.opacity = progress
 			}
 		  });

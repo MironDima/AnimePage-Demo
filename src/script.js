@@ -5,7 +5,7 @@ import search from './modules/search';
 import scrollTop from './modules/scrollTop';
 import swiper from './modules/swiper';
 import getData from './modules/getData';
-import filter from "./filter";
+import filter from "./modules/filter";
 
 prelouder()
 setBg()
@@ -13,5 +13,7 @@ modal()
 search()
 scrollTop()
 swiper()
-getData('db.json').then((data) => filter(data.anime))
+getData('db.json').then((data) => {
+	filter(data.anime)
+})
 
