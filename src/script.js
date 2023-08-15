@@ -6,6 +6,9 @@ import scrollTop from './modules/scrollTop';
 import swiper from './modules/swiper';
 import getData from './modules/getData';
 import filter from "./modules/filter";
+import render from "./modules/render";
+import addGanres from "./modules/addGanres";
+import animeListGanres from "./animeListGanres";
 
 prelouder()
 setBg()
@@ -14,6 +17,7 @@ search()
 scrollTop()
 swiper()
 getData('db.json').then((data) => {
-	filter(data.anime)
+	render(filter(data.anime))
+	animeListGanres(data.anime,addGanres(data.anime))
 })
 

@@ -5,9 +5,6 @@ const setBg = () => {
 		const src = card.getAttribute('data-setbg');
 		card.style.backgroundImage = `url(${src})`
 	})
-
-
-
 }
 
 export default setBg
