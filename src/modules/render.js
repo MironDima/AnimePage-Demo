@@ -8,13 +8,13 @@ const render = (array) => {
     <div class="view"><i class="fa fa-eye"></i>${elem.views}</div> 
     <h5><a href="/anime-details.html">${elem.title}</a></h5> 
     </div>`
-	)
-	});
+		)
+	})
+
 	wrapperCard.querySelectorAll('.set-bg').forEach(card => {
-		// const src = card.getAttribute('data-setbg');
 		card.style.backgroundImage = `url(${card.dataset.setbg})`
 	})
 
-	
+
 }
 export default render 
